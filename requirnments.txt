@@ -1,0 +1,15 @@
+# local package install
+-e .
+
+# third party packages
+
+pandas
+sklearn
+pandas
+dvc 
+dvc[gdrive]
+pytest
+tox
+flask8
+flask
+gunicorn
