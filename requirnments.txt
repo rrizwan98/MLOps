@@ -1,5 +1,6 @@
 python
 pandas
+numpy
 sklearn
 pandas
 dvc 
