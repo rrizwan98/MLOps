@@ -53,7 +53,7 @@ def train_and_evaluate(config_path):
     print("  MAE: %s" % mae)
     print("  R2: %s" % r2)
 
-#####################################################
+###################### reports & scores ###############################
     scores_file = config["reports"]["scores"]
     params_file = config["reports"]["params"]
 
@@ -73,7 +73,7 @@ def train_and_evaluate(config_path):
         json.dump(params, f, indent=4)
 
 
-#####################################################
+##################### save model ################################
 
 
     os.makedirs(model_dir, exist_ok=True)
