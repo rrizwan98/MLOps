@@ -1,11 +1,16 @@
-from src.get_data import read_params
+# from get_data import read_params
 import argparse
 import mlflow
 from mlflow.tracking import MlflowClient
 from pprint import pprint
 import joblib
 import os
+import yaml
 
+def read_params(config_path):
+    with open(config_path) as yaml_file:
+        config=yaml.safe_load(yaml_file)
+    return config
 
 
 def log_production_model(config_path):
